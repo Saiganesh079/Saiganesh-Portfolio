@@ -1,114 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-        }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-            animation: slideIn 1s ease-out;
-        }
-        @keyframes slideIn {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-        nav {
-            margin: 10px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #ffffff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #ffcc00;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            background: #ffffff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            animation: fadeIn 1s forwards;
-            animation-delay: 0.5s; /* Delay before fade-in */
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #35424a;
-            color: #ffffff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        .button:hover {
-            background-color: #ffcc00;
-            transform: scale(1.05);
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #35424a;
-            color: #ffffff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <title>Travel Website</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: sans-serif;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .journey {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+    }
+
+    .journey .tour {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .journey .tour img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .discoveries {
+      background-image: url('https://images.unsplash.com/photo-1508704068124-00b2d16e4196?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .discoveries h2 {
+      font-size: 4 0px;
+      color: #fff;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    footer {
+      background-color: #222;
+      text-align: center;
+      padding: 10px 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <h1>Welcome to My Animated Website</h1>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
 <div class="container">
-    <h2>About This Website</h2>
-    <p>This website features animations created using CSS. You can modify the content and styles to suit your needs.</p>
-    <button class="button">Learn More</button>
+  <h1 class="title">Explore the World</h1>
+  <div class="nav">
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
 
-    <h2>Services</h2>
-    <p>We offer a variety of services to help you achieve your goals. Contact us for more information!</p>
+<div class="journey">
+  <div class="tour">
+    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400" alt="Tour 1">
+    <h3>Beautiful Beaches</h3>
+    <p>Experience the serenity of the ocean.</p>
+  </div>
+  <div class="tour">
+    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400" alt="Tour 2">
+    <h3>Mountain Adventures</h3>
+    <p>Climb the highest peaks and enjoy breathtaking views.</p>
+  </div>
+  <div class="tour">
+    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400" alt="Tour 3">
+    <h3>Cultural Experiences</h3>
+    <p>Dive into the rich history and culture of different places.</p>
+  </div>
+</div>
+
+<div class="discoveries">
+  <h2>Discover New Places</h2>
+  <p>Join us on an adventure of a lifetime!</p>
 </div>
 
 <footer>
-    <p>&copy; 2023 Animated Website. All Rights Reserved.</p>
+  <p>&copy; 2023 Travel Website. All Rights Reserved.</p>
 </footer>
 
 </body>
